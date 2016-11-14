@@ -6,6 +6,7 @@ sudo apt-get install --yes apache2 libapache2-mod-fastcgi php-fpm
 wget -nc -P $IMAGES --user-agent="testuser" --referer="http://connect.wso2.com/wso2/getform/reg/new_product_download" http://dist.wso2.org/products/carbon/$CARBON_VERSION/wso2carbon-$CARBON_VERSION.zip
 wget -nc -P $IMAGES --user-agent="testuser" --referer="http://connect.wso2.com/wso2/getform/reg/new_product_download" http://dist.wso2.org/products/enterprise-service-bus/$ESB_VERSION/wso2esb-$ESB_VERSION.zip
 wget -nc -P $IMAGES --user-agent="testuser" --referer="http://connect.wso2.com/wso2/getform/reg/new_product_download" http://dist.wso2.org/products/application-server/$AS_VERSION/wso2as-$AS_VERSION.zip
+wget -nc -P $IMAGES --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jdk-8u102-linux-x64.tar.gz
 
 wget -nc -P $IMAGES http://product-dist.wso2.com/tools/svnkit-all-1.8.7.wso2v1.jar
 wget -nc -P $IMAGES  http://maven.wso2.org/nexus/content/groups/wso2-public/com/trilead/trilead-ssh2/1.0.0-build215/trilead-ssh2-1.0.0-build215.jar
